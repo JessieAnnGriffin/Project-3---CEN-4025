@@ -25,7 +25,7 @@ class Event {
         self.guests = guests
     }
 
-    private func addToSchedule(schedule: Schedule) {
+    func addToSchedule(schedule: Schedule) {
         print("This event has been added to the \(schedule.type) schedule")
     }
 

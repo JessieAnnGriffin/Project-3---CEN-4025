@@ -46,13 +46,16 @@ class ViewController: UIViewController {
         guestOne.scheduleVisit()
         guestOne.addToCart()
         guestOne.registerGuest()
-        */
 
         employee.getName()
         employee.addToSchedule()
         employee.assignTasks(task: "Feed")
         employee.updateTasks(task: "String")
         employee.updateCerts(certification: "Vet assistant")
+         */
+
+        eventOne.addToSchedule(schedule: maintenanceScheduleOne)
+        eventOne.getDay()
     }
 }
 
