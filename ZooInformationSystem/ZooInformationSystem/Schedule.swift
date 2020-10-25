@@ -12,7 +12,7 @@ class Schedule {
     private var date: Date // includes month/day/year
     private var time: Date
     private var events: [Event] // the thing to be scheduled
-    private var type: String // the child schedule to add the event to 
+    var type: String // the child schedule to add the event to 
 
     init(date: Date,
          time: Date,
