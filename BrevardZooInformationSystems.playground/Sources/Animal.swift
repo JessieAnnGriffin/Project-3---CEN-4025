@@ -1,6 +1,6 @@
 import Foundation
 
-public class Animal {
+class Animal {
     private var species: String
     private var size: Int
     private var name: String
@@ -55,4 +55,50 @@ public class Animal {
     func updateSize() {
         print("To update \(self.name)'s size and weight click here.")
     }
+}
+
+class Habitat {
+    private var plants: String // plant life
+    private var acreage: Int // size
+    private var hydration: String // water source
+    private var maintenance: Schedule // maintenance schedule
+    private var animals: [Animal]
+
+    init(plants: String,
+         acreage: Int,
+         hydration: String,
+         maintenance: Schedule,
+         animals: [Animal]) {
+
+        self.plants = plants
+        self.acreage = acreage
+        self.hydration = hydration
+        self.maintenance = maintenance
+        self.animals = animals
+    }
+
+    func getVegetation() {
+
+    }
+
+    func setSize() {
+
+    }
+
+    func maintain() {
+
+    }
+
+    func testWater() {
+
+    }
+
+    func addAnimal() {
+        
+    }
+}
+
+
+public class Schedule {
+
 }
