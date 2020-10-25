@@ -25,7 +25,7 @@ class Schedule {
         self.type = type
     }
 
-    private func addToSchedule(event: Event) {
+    func addToSchedule(event: Event) {
         events.append(event)
         print("\(event) was added to \(type)'s list of events:")
         for i in events {

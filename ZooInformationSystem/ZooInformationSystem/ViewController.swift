@@ -12,15 +12,33 @@ class ViewController: UIViewController {
 
     let maintenanceScheduleOne = Schedule(date: Date(), time: Date(), events: [], type: "Grassy and Dry")
     
-    let habitatOne = Habitat(plants: ["Trees", "Tundra", "Boulders"], acreage: 110, hydration: "Pond", maintenance: maintenanceScheduleOne, animals: [])
+    let habitatOne = Habitat(plants: ["Trees", "Tundra", "Boulders"], acreage: 110, hydration: "Pond", maintenance: Schedule(date: Date(), time: Date(), events: [], type: "Grassy and Dry"), animals: [])
 
-    let animal = Animal(species: "Lion", size: 250, name: "Gerard", habitat: habitatOne, diet: ["Cebu", "Gazelle"], compatibility: [])
+    // bug: cannot seem to initialize other objects and use them in the initialization of an animal
+    let lion = Animal(species: "Feline", size: 250, name: "Gerard", habitat: Habitat(plants: ["Trees", "Tundra", "Boulders"], acreage: 110, hydration: "Pond", maintenance: Schedule(date: Date(), time: Date(), events: [], type: "Grassy and Dry"), animals: []), diet: ["Cebu", "Gazelle"], compatibility: [])
+
+    let eventOne = Event(eventDate: Date(), eventTime: Date(), animals: [Animal(species: "Feline", size: 250, name: "Gerard", habitat: Habitat(plants: ["Trees", "Tundra", "Boulders"], acreage: 110, hydration: "Pond", maintenance: Schedule(date: Date(), time: Date(), events: [], type: "Grassy and Dry"), animals: []), diet: ["Cebu", "Gazelle"], compatibility: [])], guests: [])
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        /*
+        animal.getName()
+        animal.getID()
+        animal.feed()
+        animal.updateDiet()
+        animal.updateHabitat()
+        animal.updateSize()
+
+        habitatOne.getVegetation()
+        habitatOne.setSize(acreage: 125)
+        habitatOne.performMaintenance()
+        habitatOne.testWater()
+        habitatOne.addAnimal(animal: lion)
+        */
+
+        maintenanceScheduleOne.addToSchedule(event: eventOne)
+        maintenanceScheduleOne.checkForConflicts()
+        maintenanceScheduleOne.showSchedule()
     }
-
-
 }
 

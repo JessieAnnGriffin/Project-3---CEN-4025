@@ -28,12 +28,12 @@ class Habitat {
     }
 
     func getVegetation() {
-        print("\(plants)")
+        print("This habitat contains \(plants)")
     }
 
     func setSize(acreage: Int) {
         self.acreage = acreage
-        print("The baitat is \(acreage) acres.")
+        print("The habitat is \(acreage) acres.")
     }
 
     func performMaintenance() {
@@ -46,6 +46,7 @@ class Habitat {
 
     func addAnimal(animal: Animal) {
         animals.append(animal)
-        print("A \(animal) has been added to the habitat")
+        animal.getName()
+        print(" has been added to the habitat")
     }
 }
