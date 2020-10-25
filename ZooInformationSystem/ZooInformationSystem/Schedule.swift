@@ -16,12 +16,12 @@ class Schedule {
 
     init(date: Date,
          time: Date,
-         events: [Event] = [],
+         events: [Event],
          type: String) {
 
         self.date = date
         self.time = time
-        self.events = events
+        self.events = []
         self.type = type
     }
 

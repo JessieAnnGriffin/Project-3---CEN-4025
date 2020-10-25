@@ -18,7 +18,7 @@ class Employee {
 
     init(name: String,
          certifications: [String] = [],
-         id: UUID,
+         id: UUID = UUID(),
          tasks: [String] = [],
          payRate: Double,
          employeeSchedule: Schedule) {

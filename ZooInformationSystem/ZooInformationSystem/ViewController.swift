@@ -19,6 +19,10 @@ class ViewController: UIViewController {
 
     let eventOne = Event(eventDate: Date(), eventTime: Date(), animals: [Animal(species: "Feline", size: 250, name: "Gerard", habitat: Habitat(plants: ["Trees", "Tundra", "Boulders"], acreage: 110, hydration: "Pond", maintenance: Schedule(date: Date(), time: Date(), events: [], type: "Grassy and Dry"), animals: []), diet: ["Cebu", "Gazelle"], compatibility: [])], guests: [])
 
+    let guestOne = Guest(name: "Sarah Smith", address: "123 Dreary Lane", seasonPass: true, billingInfo: "Billing Info", reservation: Event(eventDate: Date(), eventTime: Date(), animals: [Animal(species: "Feline", size: 250, name: "Gerard", habitat: Habitat(plants: ["Trees", "Tundra", "Boulders"], acreage: 110, hydration: "Pond", maintenance: Schedule(date: Date(), time: Date(), events: [], type: "Grassy and Dry"), animals: []), diet: ["Cebu", "Gazelle"], compatibility: [])], guests: []))
+
+    let employee = Employee(name: "Amber Bock", certifications: ["None"], tasks: ["None"], payRate: 15.55, employeeSchedule: Schedule(date: Date(), time: Date(), events: [Event(eventDate: Date(), eventTime: Date(), animals: [Animal(species: "Feline", size: 250, name: "Gerard", habitat: Habitat(plants: ["Trees", "Tundra", "Boulders"], acreage: 110, hydration: "Pond", maintenance: Schedule(date: Date(), time: Date(), events: [], type: "Grassy and Dry"), animals: []), diet: ["Cebu", "Gazelle"], compatibility: [])], guests: [])], type: "String"))
+
     override func viewDidLoad() {
         super.viewDidLoad()
         /*
@@ -34,11 +38,21 @@ class ViewController: UIViewController {
         habitatOne.performMaintenance()
         habitatOne.testWater()
         habitatOne.addAnimal(animal: lion)
-        */
 
         maintenanceScheduleOne.addToSchedule(event: eventOne)
         maintenanceScheduleOne.checkForConflicts()
         maintenanceScheduleOne.showSchedule()
+
+        guestOne.scheduleVisit()
+        guestOne.addToCart()
+        guestOne.registerGuest()
+        */
+
+        employee.getName()
+        employee.addToSchedule()
+        employee.assignTasks(task: "Feed")
+        employee.updateTasks(task: "String")
+        employee.updateCerts(certification: "Vet assistant")
     }
 }
 
