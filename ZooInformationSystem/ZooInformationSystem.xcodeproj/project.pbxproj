@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		956684872544D03C001CCD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956684862544D03C001CCD20 /* AppDelegate.swift */; };
+		956684892544D03C001CCD20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956684882544D03C001CCD20 /* SceneDelegate.swift */; };
+		9566848B2544D03C001CCD20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566848A2544D03C001CCD20 /* ViewController.swift */; };
+		9566848E2544D03C001CCD20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9566848C2544D03C001CCD20 /* Main.storyboard */; };
+		956684902544D03C001CCD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9566848F2544D03C001CCD20 /* Assets.xcassets */; };
+		956684932544D03C001CCD20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956684912544D03C001CCD20 /* LaunchScreen.storyboard */; };
+		9566849E2544D03D001CCD20 /* ZooInformationSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9566849D2544D03D001CCD20 /* ZooInformationSystemTests.swift */; };
+		956684A92544D03D001CCD20 /* ZooInformationSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956684A82544D03D001CCD20 /* ZooInformationSystemUITests.swift */; };
+		956684BA2544D14D001CCD20 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956684B92544D14D001CCD20 /* Animal.swift */; };
+		956684BF2544D179001CCD20 /* Habitat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956684BE2544D179001CCD20 /* Habitat.swift */; };
+		956684C72544D1B3001CCD20 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956684C62544D1B3001CCD20 /* Schedule.swift */; };
+		956684CC2544DC45001CCD20 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956684CB2544DC45001CCD20 /* Event.swift */; };
+		956684D12544DCDE001CCD20 /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956684D02544DCDE001CCD20 /* Guest.swift */; };
+		956684D62544DFCC001CCD20 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956684D52544DFCC001CCD20 /* Employee.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9566849A2544D03D001CCD20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9566847B2544D03C001CCD20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 956684822544D03C001CCD20;
+			remoteInfo = ZooInformationSystem;
+		};
+		956684A52544D03D001CCD20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9566847B2544D03C001CCD20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 956684822544D03C001CCD20;
+			remoteInfo = ZooInformationSystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		956684832544D03C001CCD20 /* ZooInformationSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooInformationSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		956684862544D03C001CCD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		956684882544D03C001CCD20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9566848A2544D03C001CCD20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9566848D2544D03C001CCD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9566848F2544D03C001CCD20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		956684922544D03C001CCD20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		956684942544D03C001CCD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956684992544D03D001CCD20 /* ZooInformationSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZooInformationSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9566849D2544D03D001CCD20 /* ZooInformationSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooInformationSystemTests.swift; sourceTree = "<group>"; };
+		9566849F2544D03D001CCD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956684A42544D03D001CCD20 /* ZooInformationSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZooInformationSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		956684A82544D03D001CCD20 /* ZooInformationSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooInformationSystemUITests.swift; sourceTree = "<group>"; };
+		956684AA2544D03D001CCD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956684B92544D14D001CCD20 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		956684BE2544D179001CCD20 /* Habitat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habitat.swift; sourceTree = "<group>"; };
+		956684C62544D1B3001CCD20 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		956684CB2544DC45001CCD20 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		956684D02544DCDE001CCD20 /* Guest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
+		956684D52544DFCC001CCD20 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		956684802544D03C001CCD20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956684962544D03D001CCD20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956684A12544D03D001CCD20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9566847A2544D03C001CCD20 = {
+			isa = PBXGroup;
+			children = (
+				956684852544D03C001CCD20 /* ZooInformationSystem */,
+				9566849C2544D03D001CCD20 /* ZooInformationSystemTests */,
+				956684A72544D03D001CCD20 /* ZooInformationSystemUITests */,
+				956684842544D03C001CCD20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		956684842544D03C001CCD20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				956684832544D03C001CCD20 /* ZooInformationSystem.app */,
+				956684992544D03D001CCD20 /* ZooInformationSystemTests.xctest */,
+				956684A42544D03D001CCD20 /* ZooInformationSystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		956684852544D03C001CCD20 /* ZooInformationSystem */ = {
+			isa = PBXGroup;
+			children = (
+				956684B92544D14D001CCD20 /* Animal.swift */,
+				956684862544D03C001CCD20 /* AppDelegate.swift */,
+				956684882544D03C001CCD20 /* SceneDelegate.swift */,
+				9566848A2544D03C001CCD20 /* ViewController.swift */,
+				9566848C2544D03C001CCD20 /* Main.storyboard */,
+				9566848F2544D03C001CCD20 /* Assets.xcassets */,
+				956684912544D03C001CCD20 /* LaunchScreen.storyboard */,
+				956684942544D03C001CCD20 /* Info.plist */,
+				956684BE2544D179001CCD20 /* Habitat.swift */,
+				956684C62544D1B3001CCD20 /* Schedule.swift */,
+				956684CB2544DC45001CCD20 /* Event.swift */,
+				956684D02544DCDE001CCD20 /* Guest.swift */,
+				956684D52544DFCC001CCD20 /* Employee.swift */,
+			);
+			path = ZooInformationSystem;
+			sourceTree = "<group>";
+		};
+		9566849C2544D03D001CCD20 /* ZooInformationSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				9566849D2544D03D001CCD20 /* ZooInformationSystemTests.swift */,
+				9566849F2544D03D001CCD20 /* Info.plist */,
+			);
+			path = ZooInformationSystemTests;
+			sourceTree = "<group>";
+		};
+		956684A72544D03D001CCD20 /* ZooInformationSystemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				956684A82544D03D001CCD20 /* ZooInformationSystemUITests.swift */,
+				956684AA2544D03D001CCD20 /* Info.plist */,
+			);
+			path = ZooInformationSystemUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		956684822544D03C001CCD20 /* ZooInformationSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 956684AD2544D03D001CCD20 /* Build configuration list for PBXNativeTarget "ZooInformationSystem" */;
+			buildPhases = (
+				9566847F2544D03C001CCD20 /* Sources */,
+				956684802544D03C001CCD20 /* Frameworks */,
+				956684812544D03C001CCD20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZooInformationSystem;
+			productName = ZooInformationSystem;
+			productReference = 956684832544D03C001CCD20 /* ZooInformationSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		956684982544D03D001CCD20 /* ZooInformationSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 956684B02544D03D001CCD20 /* Build configuration list for PBXNativeTarget "ZooInformationSystemTests" */;
+			buildPhases = (
+				956684952544D03D001CCD20 /* Sources */,
+				956684962544D03D001CCD20 /* Frameworks */,
+				956684972544D03D001CCD20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9566849B2544D03D001CCD20 /* PBXTargetDependency */,
+			);
+			name = ZooInformationSystemTests;
+			productName = ZooInformationSystemTests;
+			productReference = 956684992544D03D001CCD20 /* ZooInformationSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		956684A32544D03D001CCD20 /* ZooInformationSystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 956684B32544D03D001CCD20 /* Build configuration list for PBXNativeTarget "ZooInformationSystemUITests" */;
+			buildPhases = (
+				956684A02544D03D001CCD20 /* Sources */,
+				956684A12544D03D001CCD20 /* Frameworks */,
+				956684A22544D03D001CCD20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				956684A62544D03D001CCD20 /* PBXTargetDependency */,
+			);
+			name = ZooInformationSystemUITests;
+			productName = ZooInformationSystemUITests;
+			productReference = 956684A42544D03D001CCD20 /* ZooInformationSystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9566847B2544D03C001CCD20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					956684822544D03C001CCD20 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					956684982544D03D001CCD20 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 956684822544D03C001CCD20;
+					};
+					956684A32544D03D001CCD20 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 956684822544D03C001CCD20;
+					};
+				};
+			};
+			buildConfigurationList = 9566847E2544D03C001CCD20 /* Build configuration list for PBXProject "ZooInformationSystem" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9566847A2544D03C001CCD20;
+			productRefGroup = 956684842544D03C001CCD20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				956684822544D03C001CCD20 /* ZooInformationSystem */,
+				956684982544D03D001CCD20 /* ZooInformationSystemTests */,
+				956684A32544D03D001CCD20 /* ZooInformationSystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		956684812544D03C001CCD20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956684932544D03C001CCD20 /* LaunchScreen.storyboard in Resources */,
+				956684902544D03C001CCD20 /* Assets.xcassets in Resources */,
+				9566848E2544D03C001CCD20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956684972544D03D001CCD20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956684A22544D03D001CCD20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9566847F2544D03C001CCD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956684C72544D1B3001CCD20 /* Schedule.swift in Sources */,
+				956684D62544DFCC001CCD20 /* Employee.swift in Sources */,
+				9566848B2544D03C001CCD20 /* ViewController.swift in Sources */,
+				956684BA2544D14D001CCD20 /* Animal.swift in Sources */,
+				956684872544D03C001CCD20 /* AppDelegate.swift in Sources */,
+				956684892544D03C001CCD20 /* SceneDelegate.swift in Sources */,
+				956684CC2544DC45001CCD20 /* Event.swift in Sources */,
+				956684D12544DCDE001CCD20 /* Guest.swift in Sources */,
+				956684BF2544D179001CCD20 /* Habitat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956684952544D03D001CCD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9566849E2544D03D001CCD20 /* ZooInformationSystemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956684A02544D03D001CCD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956684A92544D03D001CCD20 /* ZooInformationSystemUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9566849B2544D03D001CCD20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 956684822544D03C001CCD20 /* ZooInformationSystem */;
+			targetProxy = 9566849A2544D03D001CCD20 /* PBXContainerItemProxy */;
+		};
+		956684A62544D03D001CCD20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 956684822544D03C001CCD20 /* ZooInformationSystem */;
+			targetProxy = 956684A52544D03D001CCD20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9566848C2544D03C001CCD20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9566848D2544D03C001CCD20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		956684912544D03C001CCD20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				956684922544D03C001CCD20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		956684AB2544D03D001CCD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		956684AC2544D03D001CCD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		956684AE2544D03D001CCD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PV8C8697QD;
+				INFOPLIST_FILE = ZooInformationSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessiegriffin.ZooInformationSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		956684AF2544D03D001CCD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PV8C8697QD;
+				INFOPLIST_FILE = ZooInformationSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessiegriffin.ZooInformationSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		956684B12544D03D001CCD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PV8C8697QD;
+				INFOPLIST_FILE = ZooInformationSystemTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessiegriffin.ZooInformationSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZooInformationSystem.app/ZooInformationSystem";
+			};
+			name = Debug;
+		};
+		956684B22544D03D001CCD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PV8C8697QD;
+				INFOPLIST_FILE = ZooInformationSystemTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessiegriffin.ZooInformationSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZooInformationSystem.app/ZooInformationSystem";
+			};
+			name = Release;
+		};
+		956684B42544D03D001CCD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PV8C8697QD;
+				INFOPLIST_FILE = ZooInformationSystemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessiegriffin.ZooInformationSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZooInformationSystem;
+			};
+			name = Debug;
+		};
+		956684B52544D03D001CCD20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PV8C8697QD;
+				INFOPLIST_FILE = ZooInformationSystemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jessiegriffin.ZooInformationSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZooInformationSystem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9566847E2544D03C001CCD20 /* Build configuration list for PBXProject "ZooInformationSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				956684AB2544D03D001CCD20 /* Debug */,
+				956684AC2544D03D001CCD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		956684AD2544D03D001CCD20 /* Build configuration list for PBXNativeTarget "ZooInformationSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				956684AE2544D03D001CCD20 /* Debug */,
+				956684AF2544D03D001CCD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		956684B02544D03D001CCD20 /* Build configuration list for PBXNativeTarget "ZooInformationSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				956684B12544D03D001CCD20 /* Debug */,
+				956684B22544D03D001CCD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		956684B32544D03D001CCD20 /* Build configuration list for PBXNativeTarget "ZooInformationSystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				956684B42544D03D001CCD20 /* Debug */,
+				956684B52544D03D001CCD20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9566847B2544D03C001CCD20 /* Project object */;
+}
